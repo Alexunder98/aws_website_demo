@@ -24,6 +24,13 @@ def home():
                 h1 {{
                     margin-bottom: 20px;
                 }}
+                .buttons {{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                    align-items: center;
+                }}
+
                 a.button {{
                     display: inline-block;
                     padding: 15px 30px;
@@ -37,11 +44,43 @@ def home():
                 a.button:hover {{
                     background: darkred;
                 }}
+
+                .socials {{
+                    display: flex;
+                    gap: 12px;
+                    margin-top: 6px;
+                }}
+
+                a.social {{
+                    display: inline-block;
+                    padding: 10px 16px;
+                    background: rgba(255,255,255,0.06);
+                    color: white;
+                    text-decoration: none;
+                    border-radius: 8px;
+                    font-weight: 600;
+                    transition: background 0.2s, transform 0.08s;
+                    border: 1px solid rgba(255,255,255,0.04);
+                }}
+                a.social:hover {{
+                    background: rgba(255,255,255,0.09);
+                    transform: translateY(-2px);
+                }}
+                /* platform colors */
+                a.social.linkedin {{ background: #0077b5; }}
+                a.social.github {{ background: #24292e; }}
             </style>
         </head>
         <body>
             <h1>Hello, Internet!</h1>
-            <a class="button" href="{url_for('video')}">Don't click here</a>
+            <div class="buttons">
+                <a class="button" href="{url_for('video')}">Don't click here</a>
+
+                <div class="socials">
+                    <a class="social linkedin" href="https://www.linkedin.com/in/alexandru-troaca/" target="_blank" rel="noopener noreferrer" aria-label="Alexandru on LinkedIn">LinkedIn</a>
+                    <a class="social github" href="https://github.com/Alexunder98" target="_blank" rel="noopener noreferrer" aria-label="Alexunder98 on GitHub">GitHub</a>
+                </div>
+            </div>
         </body>
         </html>
     """)
