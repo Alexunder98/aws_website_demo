@@ -1,8 +1,5 @@
-# aws_website_demo
-A fun way to learn and show DevOps skills
-
-## Link
-www.alexct.website
+# AWS website app demo
+A fun way to learn and show DevOps skills :sparkles: [here](www.alexct.website) :sparkles:
 
 ## Features
 
@@ -21,5 +18,6 @@ User connects to www.alexct.website then his request reaches global DNS server >
 
 
 ## Resources
-
-[AWS Route 53] (https://www.youtube.com/watch?v=jDz4j_kkyLA)
+[Domain name source](https://www.namecheap.com)
+[AWS Route 53](https://www.youtube.com/watch?v=jDz4j_kkyLA)
+[AWS Static IP](https://www.youtube.com/watch?v=4T6fk6UtpsE)
